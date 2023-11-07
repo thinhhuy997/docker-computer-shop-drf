@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "category_name": "cpu-intel"
+    },
+	{
+      "category_name": "cpu-amd"
+    },
+	{
+      "category_name": "main-intel"
+    },
+	{
+      "category_name": "main-amd"
+    },
+	{
+      "category_name": "vga"
+    }
+  ],
+  
+  "link": "http://127.0.0.1:8000/api/category-multiple-create/"
+}
