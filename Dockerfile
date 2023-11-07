@@ -16,8 +16,10 @@ WORKDIR /code
 EXPOSE 8000
 
 # runs the production server
-ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
+# ENTRYPOINT ["python", "manage.py"]
+# CMD ["runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "computer_shop.wsgi"]
+
 
 # Using for build the django app image
 # docker build -t computer-shop-drf .
